@@ -4,7 +4,7 @@ Python module for importing video references in Autodesk Maya.
 ![videoReference loaded in Maya](/images/videoReferenceStill1.png)
 
 # Video Tutorial:
-[![Watch the video](/images/introSlate.png)](https://vimeo.com/667222084)
+[![Watch the video](/images/introSlate.png)](https://vimeo.com/682272543)
 
 # How to install:
 

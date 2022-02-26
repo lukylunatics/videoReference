@@ -91,7 +91,7 @@ def clearMemory():
 
 def createDialog(message="Default Message", title="Default Title",	icon="question",
 		buttons=["Install", "Cancel"], cancelButton="Cancel"
-	) -> str:
+) -> str:
 	"""Convinience wrapper method for creating confirmDialogs."""
 	return cmds.confirmDialog(
 		title=title,
