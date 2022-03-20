@@ -40,6 +40,11 @@ Maya 2022 - Python 3.7 (Windows, Linux, MacOS not yet tested but should work)
 
 # Release Notes:
 ```
+Version 1.0.1
+
+Adds option box under the Create / Video Reference maya main menu
+Improved drag and drop installer
+
 Version 1.0.0
 
 Initial release
