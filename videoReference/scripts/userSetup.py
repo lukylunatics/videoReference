@@ -8,8 +8,7 @@ from videoReference import VideoReference
 moduleName = "videoReference"
 
 def addMenuItem():
-	if not cmds.about(batch=True):
-		VideoReference.createMenuItems()
+	if not cmds.about(batch=True): VideoReference.createMenuItems()
 
 utils.executeDeferred(addMenuItem)
 
