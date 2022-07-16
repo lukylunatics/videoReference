@@ -21,6 +21,7 @@ logger = logging.getLogger("VideoReference")
 
 
 class VideoReference():
+
 	"""Python module class for importing video references for animation."""
 
 	videoFilters = """
@@ -231,7 +232,7 @@ class VideoReference():
 	@classmethod
 	def doIt(cls, attachToCamera=True, animClip=True, openTimeEditor=True) -> bool:
 		"""Main method for the 'command' doIt equivalent.
-		
+
 		Args:
 			attachToCamera (bool): If True the video reference will be parented under the
 				currently active camera.
@@ -348,13 +349,13 @@ class VideoReference():
 		closeButton = mel.eval('getOptionBoxCloseBtn')
 		cmds.button(closeButton, edit=True, command=cls.closeOptionBox)
 
-		# Buttons in the menu only accept MEL
+		# Buttons in the menu only accepts MEL
 		resetButton = mel.eval('getOptionBoxResetBtn')
 		cmds.button(resetButton, edit=True,
 		 	command='python("from videoReference import VideoReference; VideoReference.resetToDefaults()")'
 		)
 
-		# Buttons in the menu only accept MEL
+		# Buttons in the menu only accepts MEL
 		saveButton = mel.eval('getOptionBoxSaveBtn')
 		cmds.button(saveButton,	edit=True,
 		 	command='python("from videoReference import VideoReference; VideoReference.getCreateCommandKwargs()")'
